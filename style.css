@@ -1,0 +1,108 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f4f6f8;
+    margin: 0;
+    padding: 40px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    padding: 24px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 16px;
+}
+
+th,
+td {
+    padding: 12px 8px;
+    border-bottom: 1px solid #e0e0e0;
+    text-align: left;
+}
+
+th {
+    background: #f0f2f5;
+    color: #555;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+#addBtn {
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+    width: 56px;
+    height: 56px;
+    background: #1976d2;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 16px rgba(25, 118, 210, 0.2);
+    z-index: 1000;
+    margin: 0;
+    transition: background 0.2s;
+    float: none;
+    padding: 0;
+}
+
+#addBtn:hover {
+    background: #1565c0;
+}
+
+.input-row input {
+    width: 90%;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* Agrega esto a tu style.css */
+.confirmBtn, .deleteBtn {
+    background: #1976d2;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 8px;
+    font-size: 18px;
+    padding: 4px 8px;
+    transition: background 0.2s;
+}
+.confirmBtn:hover, .deleteBtn:hover {
+    background: #1565c0;
+}
+
+/* Agrega esto a tu style.css */
+.editBtn {
+    background: #ffa000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 8px;
+    font-size: 18px;
+    padding: 4px 8px;
+    transition: background 0.2s;
+}
+.editBtn:hover {
+    background: #ff8f00;
+}
