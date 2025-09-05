@@ -184,6 +184,25 @@ tr.completada {
     color: #888;
 }
 
+/* Corrige el color en modo oscuro */
+body.dark tr.completada {
+    background: #333b4a;
+    color: #bbb;
+}
+
+body.dark tr.completada .prioridad-alta,
+body.dark tr.completada .prioridad-media,
+body.dark tr.completada .prioridad-baja {
+    color: #bbb;
+    background: #444 !important;
+}
+
+body.dark tr.completada .editBtn,
+body.dark tr.completada .deleteBtn {
+    filter: grayscale(0.5) brightness(0.8);
+    opacity: 0.7;
+}
+
 @media (max-width: 700px) {
     .container {
         padding: 8px;
