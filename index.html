@@ -9,12 +9,29 @@
 <body>
     <div class="container">
         <h1>LISTA DE TAREAS</h1>
+        <p class="descripcion">Ten una buena organización sobre tus proyectos</p>
+        <div class="top-bar">
+            <input type="text" id="searchInput" placeholder="Buscar tarea...">
+            <select id="filterEstado">
+                <option value="">Todos los estados</option>
+                <option value="Pendiente">Pendiente</option>
+                <option value="En proceso">En proceso</option>
+                <option value="Completada">Completada</option>
+            </select>
+            <button id="darkModeBtn" title="Modo oscuro">🌙</button>
+            <button id="exportBtn" title="Exportar JSON">⬇️</button>
+        </div>
+        <div id="contador"></div>
         <button id="addBtn" title="Agregar tarea">+</button>
         <table>
             <thead>
                 <tr>
+                    <th></th>
                     <th>Tarea</th>
-                    <th>Estado</th> 
+                    <th>Estado</th>
+                    <th>Prioridad</th>
+                    <th>Fecha</th>
+                    <th>Acciones</th>
                 </tr>
             </thead>
             <tbody id="todoBody">
@@ -22,8 +39,6 @@
             </tbody>
         </table>
     </div>
-
-
     <script src="script.js"></script>
 </body>
 </html>
